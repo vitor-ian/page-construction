@@ -1,0 +1,162 @@
+/*===========================AJUSTES PADRÃO===========================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&family=VT323&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&family=VT323&family=Wallpoet&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul{
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+textarea {
+    resize: none!important;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+body{
+    background: rgb(84,6,125);
+    background: radial-gradient(circle, rgba(84,6,125,1) 33%, rgba(48,6,90,1) 100%);
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    margin: 40px;
+    width: 50%;
+}
+
+.sec-img img{
+    width: 100%;
+    max-width: 900px;
+}
+
+.icon-alert{
+    color: #E84FCB;
+    font-size: 70px;
+}
+
+h1{
+    color: white;
+    font-size: calc(2rem + 1.5vw) !important;
+}
+
+p{
+    color: rgb(192, 192, 192);
+    font-size: 1.2rem;
+    max-width: 700px;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.btn-social{
+    color: white;
+    font-size: 25px;
+    margin-right: 30px;
+
+    transition: .6s ease;
+}
+
+.btn-social:hover{
+    color: #E84FCB;
+}
+
+.btn-action{
+    background-color: transparent;
+    border: 1px solid #E84FCB;
+    color: #E84FCB;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+
+    transition: .6s ease;
+}
+
+.btn-action:hover{
+    background-color: #E84FCB;
+    color: white;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(216, 216, 216);
+    text-align: center;
+    padding: 20px;
+    font-weight: 200;
+}
+
+footer a{
+    color: white;
+    font-weight: 600;
+}
+
+
+footer a:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    section{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    body{
+        display: block;
+        padding: 2rem;
+    }
+
+    .sec-img img{
+        padding: 1em;
+    }
+
+    .btn-action{
+        width: 100%;
+    }
+
+    .socials{
+        width: 100%;
+        justify-content: center;
+    }
+}
